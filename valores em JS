@@ -1,0 +1,15 @@
+// Solicita ao usuário para inserir 3 números
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+let num3 = parseFloat(prompt("Digite o terceiro número:"));
+
+// Coloca os números em um array
+let numeros = [num1, num2, num3];
+
+// Ordena os números em ordem decrescente
+numeros.sort(function(a, b) {
+  return b - a;
+});
+
+// Exibe os números ordenados
+console.log("Os números em ordem decrescente são: " + numeros.join(", "));
